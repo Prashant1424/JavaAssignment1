@@ -1,11 +1,13 @@
+// Write a program to check two strings are equal or not.
+
 package com.assignment.java;
 
 import java.util.Scanner;
 
 public class StringComparision {
 
-	static String a = "Prashant";
-	String b = "Prashant";
+	static String a = "Prashant";	//	Static variable : Can be called by Class name or by Object name or Directly inside a class
+	String b = "Prashant";			// Non Static or Instance variable : Can be called by Object name only inside a class.
 	
 	@SuppressWarnings("resource")
 	

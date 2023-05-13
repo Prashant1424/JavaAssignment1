@@ -1,9 +1,9 @@
+//	Write a java program to display the default value of all Primitive Data types of Java
+
 package com.assignment.java;
 
 public class DisplayPrimitiveDataTypes {
-	
-//	Write a java program to display the default value of all Primitive Data types of Java
-	
+		
 	static byte a;
 	static short b;
 	static int c;
