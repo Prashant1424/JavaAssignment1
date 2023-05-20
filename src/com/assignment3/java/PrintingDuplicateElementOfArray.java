@@ -1,10 +1,9 @@
-// Write a Java Program to sort the elements of an array in ascending order
-
 package com.assignment3.java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortingArray {
+public class PrintingDuplicateElementOfArray {
 
 	static Scanner scan = new Scanner(System.in);
 	
@@ -22,23 +21,27 @@ public class SortingArray {
 			arr[i] = scan.nextInt();
 		}
 		
-		int temp;
-		
+//		Arrays.sort(arr);
+		int[] temp = new int[arr.length];
+		int c,count,temp2=0;
+		temp[0]=arr[0];
 		for(int i = 0; i < size; i++) {
-			for (int j = i; j < size; j++) {
-				if(arr[i]>arr[j]) {
-					temp=arr[i];
-					arr[i]=arr[j];
-					arr[j]=temp;
+			c=i;
+			count=0;
+			for(int j=i+1; j<size; j++) {
+				if(arr[i]!=arr[j]) {
+					temp[c++]=arr[i];
+					count++;
+					temp2=arr[j];
 				}
 			}
+			
+//			arr=temp;
+			if(count>0)System.out.println(temp2);
+//if(c>0)System.out.println(temp);
 		}
 		
-		System.out.println("The resulted Shorted Array in Ascending order is : ");
 		
-		for (int i = 0; i < size; i++) {
-			System.out.println(arr[i]);
-		}
 	}
 
 }
