@@ -18,7 +18,7 @@ public class FindSqrtOfQuadEq {
 	static double delta, root1, root2;
 	
 	@SuppressWarnings("resource")
-
+	
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -38,17 +38,29 @@ public class FindSqrtOfQuadEq {
 		delta = b*b - 4*a*c;
 		
 		if( delta == 0) {
+			
 			root1 = -b/(2*a);
+			
 			System.out.println(root1);
-//			root2 = -b/2*a;
+//			
+			root2 = -b/2*a;
+			
 			System.out.println("Both roots are real and equal i.e. : " + root1);
+	
 		}else if( delta > 0 ) {
+		
 			root1 = (-b+Math.sqrt(delta))/(2*a);
+			
 			root2 = (-b-Math.sqrt(delta))/(2*a);
+			
 			System.out.println("First root of quadratic equation is : " + root1);
+			
 			System.out.println("Second root of quadratic equation is : " + root2);
+	
 		}else {
+		
 			System.out.println("Roots are imaginary");
+		
 		}	
 
 	}

@@ -40,7 +40,6 @@ public class PerfectNumber {
 			System.out.println("Entered number " + num + " is not a Perfect number.");
 
 		
-		
 	}
 
 }
