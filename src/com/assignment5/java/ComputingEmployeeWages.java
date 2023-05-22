@@ -80,13 +80,13 @@ public class ComputingEmployeeWages {
 			case 1 :	if(present >= 12) 
 							ew.monthlyWageFullTime(present);
 						else
-							System.out.println("\nTo get your monthly wage you need to be present more than " + present + " days.");
+							System.out.println("\nTo get your monthly wage you need to be present more than 11 days.");
 						break;
 
 			case 2 :	if(present >= 12) 
 							ew.monthlyWagePartTime(present);
 						else
-							System.out.println("\nTo get your monthly wage you need to be present more than " + present + " days.");
+							System.out.println("\nTo get your monthly wage you need to be present more than 11 days.");
 						break;
 
 			default : System.out.println("\nPlease enter a valid input.");
