@@ -4,7 +4,6 @@ package com.assignment.java;
 
 public class SumOfCMDLineArgs {
 
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		int sum = 0;
